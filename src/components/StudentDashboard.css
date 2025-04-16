@@ -1,0 +1,107 @@
+.student-dashboard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.student-dashboard h1 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.exams-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.exam-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exam-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exam-card h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.exam-details {
+  margin-bottom: 1.5rem;
+}
+
+.exam-details p {
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.exam-details strong {
+  color: #1f2937;
+}
+
+.status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-available {
+  background-color: #dcfce7;
+  color: #059669;
+}
+
+.status-upcoming {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.status-completed {
+  background-color: #f3f4f6;
+  color: #6b7280;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #6b7280;
+  font-size: 1.125rem;
+} 

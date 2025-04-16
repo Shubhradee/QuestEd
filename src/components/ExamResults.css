@@ -1,0 +1,154 @@
+.results-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.results-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.grade-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.grade {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2563eb;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.score {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.percentage {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-top: 0.25rem;
+}
+
+.questions-review {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.questions-review h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.question-review {
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.question-header h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.question-score {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.accuracy {
+  color: #2563eb;
+  margin-left: 0.5rem;
+}
+
+.question-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.answer-review {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.your-answer,
+.correct-answer,
+.sample-answer {
+  font-size: 0.875rem;
+}
+
+.your-answer h4,
+.correct-answer h4,
+.sample-answer h4 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.your-answer p {
+  color: #4b5563;
+}
+
+.correct-answer p {
+  color: #059669;
+  font-weight: 500;
+}
+
+.sample-answer p {
+  color: #4b5563;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #dc2626;
+  background-color: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 400px;
+} 

@@ -1,0 +1,367 @@
+/* TeacherPage.css */
+
+.question-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.question-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+img {
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.text-red-500 {
+  color: #e53e3e;
+}
+
+.teacher-page {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teacher-page h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.teacher-page h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.teacher-page h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.teacher-page label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: #374151;
+}
+
+.teacher-page .form-group {
+  margin-bottom: 1rem;
+}
+
+.teacher-page .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.teacher-page .form-col {
+  flex: 1;
+}
+
+.teacher-page .card {
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.teacher-page .question-card {
+  border: 1px solid #e5e7eb;
+}
+
+.teacher-page .input {
+  width: 100%;
+  height: 28px;
+  padding: 0 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.teacher-page .textarea {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  min-height: 40px;
+  resize: vertical;
+}
+
+.teacher-page .select {
+  width: 100%;
+  height: 28px;
+  padding: 0 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background-color: white;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+}
+
+.teacher-page .select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+.teacher-page .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.teacher-page .button:hover {
+  opacity: 0.9;
+}
+
+.teacher-page .button-primary {
+  background-color: #3b82f6;
+}
+
+.teacher-page .button-success {
+  background-color: #10b981;
+}
+
+.teacher-page .button-danger {
+  background-color: #ef4444;
+}
+
+.teacher-page .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.teacher-page .flex {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.teacher-page .space-y-2 > * + * {
+  margin-top: 0.25rem;
+}
+
+.teacher-page .space-y-3 > * + * {
+  margin-top: 0.5rem;
+}
+
+.teacher-page .space-y-4 > * + * {
+  margin-top: 0.75rem;
+}
+
+.teacher-page .space-y-6 > * + * {
+  margin-top: 1rem;
+}
+
+.teacher-page .mt-6 {
+  margin-top: 1rem;
+}
+
+.teacher-page .pt-4 {
+  padding-top: 0.75rem;
+}
+
+.teacher-page .pb-4 {
+  padding-bottom: 0.75rem;
+}
+
+.teacher-page .mb-4 {
+  margin-bottom: 0.75rem;
+}
+
+.teacher-page .p-4 {
+  padding: 0.75rem;
+}
+
+.teacher-page .p-6 {
+  padding: 1rem;
+}
+
+.teacher-page .gap-2 {
+  gap: 0.25rem;
+}
+
+.teacher-page .gap-4 {
+  gap: 0.75rem;
+}
+
+.teacher-page .border {
+  border: 1px solid #e5e7eb;
+}
+
+.teacher-page .border-b {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.teacher-page .rounded {
+  border-radius: 0.25rem;
+}
+
+.teacher-page .rounded-lg {
+  border-radius: 0.25rem;
+}
+
+.teacher-page .shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-page .shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.teacher-page .bg-white {
+  background-color: white;
+}
+
+.teacher-page .bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.teacher-page .text-red-500 {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin: 0.25rem 0;
+}
+
+.teacher-page .text-gray-600 {
+  color: #4b5563;
+}
+
+.teacher-page .text-gray-700 {
+  color: #374151;
+}
+
+.teacher-page .text-gray-800 {
+  color: #1f2937;
+}
+
+.teacher-page .text-sm {
+  font-size: 0.75rem;
+}
+
+.teacher-page .text-lg {
+  font-size: 0.875rem;
+}
+
+.teacher-page .text-xl {
+  font-size: 1rem;
+}
+
+.teacher-page .text-2xl {
+  font-size: 1.125rem;
+}
+
+.teacher-page .font-medium {
+  font-weight: 500;
+}
+
+.teacher-page .font-semibold {
+  font-weight: 600;
+}
+
+.teacher-page .font-bold {
+  font-weight: 700;
+}
+
+.teacher-page .w-full {
+  width: 100%;
+}
+
+.teacher-page .w-24 {
+  width: 4rem;
+}
+
+.teacher-page .w-40 {
+  width: 6rem;
+}
+
+.teacher-page .h-24 {
+  height: 4rem;
+}
+
+.teacher-page .object-cover {
+  object-fit: cover;
+}
+
+.teacher-page .list-disc {
+  list-style-type: disc;
+}
+
+.teacher-page .list-inside {
+  list-style-position: inside;
+}
+
+.teacher-page .mr-2 {
+  margin-right: 0.25rem;
+}
+
+/* Additional styles for better spacing */
+.teacher-page p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 0.25rem;
+}
+
+.teacher-page ul {
+  font-size: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.teacher-page li {
+  margin-bottom: 0.125rem;
+}
+
+.teacher-page input[type="file"] {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+}
+
+.teacher-page svg {
+  width: 16px;
+  height: 16px;
+}
